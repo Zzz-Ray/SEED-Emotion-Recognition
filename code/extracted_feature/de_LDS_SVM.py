@@ -10,7 +10,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
 
 
-folder_path = '../data/ExtractedFeatures/'
+folder_path = '../../data/ExtractedFeatures/'
 
 
 def all_data_svm(folder_path):
