@@ -231,7 +231,9 @@ def build_preprocessed_eeg_dataset_CNN_3D(file_path):
     for file_name in all_file:
         with open(os.path.join(file_path, file_name), 'rb') as file:
             key = file_name.split('.')[0]
-            if key == 'label':
+            if key == 'readme':
+                continue
+            elif key == 'label':
                 label_dict = pickle.load(file)
             else:
                 feature_vector_dict[key] = pickle.load(file)

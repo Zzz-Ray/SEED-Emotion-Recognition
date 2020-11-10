@@ -21,7 +21,7 @@ def leave_one_cross_validation():
     :return None:
     '''
     accuracy = []
-    for subject in range(1, 15):
+    for subject in range(1, 16):
         train_feature, train_label, test_feature, test_label = subject_independent_data_split(feature_vector_dict,
                                                                                               label_dict,
                                                                                               {str(subject)})
